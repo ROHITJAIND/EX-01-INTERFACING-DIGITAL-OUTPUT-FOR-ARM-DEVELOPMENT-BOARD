@@ -1,4 +1,4 @@
-# INTERFACING DIGITAL OUTPUT FOR ARM DEVELOPMENT BOARD 
+# EX-01 INTERFACING DIGITAL OUTPUT FOR ARM DEVELOPMENT BOARD 
 ### Aim: 
 To Interface a Digital output (LED) to ARM development board and write a blink code.
 ### Components required: 
@@ -27,9 +27,135 @@ The main features of LPC2148 include the following.
 •	60 MHz of utmost CPU CLK-clock obtainable from the programmable-on-chip phase locked loop by resolving time is 100 μs.
 •	The incorporated oscillator on the chip will work by an exterior crystal that ranges from 1 MHz-25 MHz
 •	The modes for power-conserving mainly comprise idle & power down.
-•	For extra power optimization, there are individual enable or disable of peripheral functions and peripheral CLK scaling.
+•	For extra power optimization, there are individual enable or disable of peripheral functions and peripheral CLK scaling.<br>
 ### Procedure:
-1. click on STM 32 CUBE IDE, the following screen will appear.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">2. click on FILE, click on new stm 32 project.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png"><img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png">3. select the target to be programmed  as shown below and click on next.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png">4. select the program name.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png">5. corresponding ioc file will be generated automatically.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189378-3abbdee2-0df6-470f-a3cd-79c74e3d3ad8.png">6.select the appropriate pins as gipo, in or out, USART or required options and configure.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png"><img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189425-2b2414ce-49b3-4b61-a260-c658cb2e4152.png">7.click on cntrl+S , automaticall C program will be generated.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png"><img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png">8. edit the program and as per required.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">9. use project and build all.<img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png">10. once the project is bulild link the hexfile build in stm32cube ide using post processor build <img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png">11. click on debug option <img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png">12. connect the stm nucleo board and click on run <img height=30% width=100% src="https://user-images.githubusercontent.com/36288975/226189649-b5dff389-91df-4eca-b84a-1127c6562637.png">
+<table>
+  <tr>
+    <td width="50%">
+      1. click on STM 32 CUBE IDE, the following screen will appear.
+    </td>
+    <td>
+      <img height=7% width=90% src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      2. click on FILE, click on new stm 32 project.
+    </td>
+    <td width="50%">
+  <img src="https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png">
+    <img src="https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      3. select the target to be programmed  as shown below and click on next.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png">
+    </td>
+  </tr>
+   <tr>
+    <td width="50%">
+      4.select the program name.
+    </td>
+    <td >
+      <img height=10% width=50% src="https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png">
+    </td>
+  </tr>
+     <tr>
+    <td width="50%">
+      5. corresponding ioc file will be generated automatically.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189378-3abbdee2-0df6-470f-a3cd-79c74e3d3ad8.png">
+    </td>
+  </tr>
+    <tr>
+    <td width="50%">
+      6.select the appropriate pins as gipo, in or out, USART or required options and configure.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png">
+    </td>
+  </tr>
+    <tr>
+    <td width="50%">
+      7.click on cntrl+S , automaticall C program will be generated.
+    </td>
+    <td width="50%">
+<img src="https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png">
+    </td>
+  </tr>
+    <tr>
+    <td width="50%">
+      8. edit the program and as per required.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
+    </td>
+  </tr>
+    <tr>
+    <td width="50%">
+      8. edit the program and as per required.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
+    </td>
+  </tr>  
+  <tr>
+    <td width="50%">
+      9. Add necessary library files of LCD 16x2 , write the program and use project and build.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png">
+    </td>
+  </tr>   
+  <tr>
+    <td width="50%">
+      10. once the project is bulild.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png">
+    </td>
+  </tr>  
+  <tr>
+    <td width="50%">
+      11. click on debug option.
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png">
+    </td>
+  </tr>  
+  
+  <tr>
+    <td width="50%">
+      
+  12.  Creating Proteus project and running the simulation.
+  We are now at the last part of step by step guide on how to simulate STM32 project in Proteus.
+13. Create a new Proteus project and place STM32F40xx i.e. the same MCU for which the project was created in STM32Cube IDE. 
+14. After creation of the circuit as per requirement as shown below
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/233856847-32bea88a-565f-4e01-9c7e-4f7ed546ddf6.png">
+    </td>
+  </tr>  
+  <tr>
+    <td width="50%">
+      15. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
+https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
+
+16. click on debug and simulate using simulation as shown below 
+
+
+    </td>
+    <td width="50%">
+      <img src="https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png">
+    </td>
+  </tr>  
+  
+</table>
+
 ### STM 32 CUBE PROGRAM :
 ```
 ROHIT JAIN D
@@ -52,59 +178,6 @@ int main(void)
 	  HAL_Delay(3000);   
   }
 }
-void SystemClock_Config(void)
-{
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSIDiv = RCC_HSI_DIV1;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
-  RCC_OscInitStruct.PLL.PLLN = 8;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
-  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-}
-static void MX_GPIO_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-}
-void Error_Handler(void)
-{
-  __disable_irq();
-  while (1)
-  {
-  }
-}
-#ifdef  USE_FULL_ASSERT
-void assert_failed(uint8_t *file, uint32_t line)
-{
-}
-#endif /* USE_FULL_ASSERT */
 ```
 ## Output  :
 <img height=30% width=40% src="https://github.com/ROHITJAIND/INTERFACING-DIGITAL-OUTPUT-FOR-ARM-DEVELOPMENT-BOARD/assets/118707073/9fd535a7-6d28-413b-afd9-fbf2412a0699"> <img height=30% width=40% src="https://github.com/ROHITJAIND/INTERFACING-DIGITAL-OUTPUT-FOR-ARM-DEVELOPMENT-BOARD/assets/118707073/e3b499b6-24f4-4fc5-b139-ebdeaef9bae8">
