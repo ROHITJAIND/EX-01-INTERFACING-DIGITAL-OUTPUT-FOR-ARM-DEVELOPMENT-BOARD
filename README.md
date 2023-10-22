@@ -60,7 +60,9 @@ The main features of LPC2148 include the following.
       4.select the program name.
     </td>
     <td >
-      <img height=10% width=50% src="https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png">
+	    <div align='center'>
+      <img height=33% width=65% src="https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png">
+		    </div>
     </td>
   </tr>
      <tr>
@@ -77,6 +79,7 @@ The main features of LPC2148 include the following.
     </td>
     <td width="50%">
       <img src="https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png">
+<img src="https://user-images.githubusercontent.com/36288975/226189425-2b2414ce-49b3-4b61-a260-c658cb2e4152.png">
     </td>
   </tr>
     <tr>
@@ -85,6 +88,7 @@ The main features of LPC2148 include the following.
     </td>
     <td width="50%">
 <img src="https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png">
+	    <img src="https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png">  
     </td>
   </tr>
     <tr>
@@ -95,14 +99,6 @@ The main features of LPC2148 include the following.
       <img src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
     </td>
   </tr>
-    <tr>
-    <td width="50%">
-      8. edit the program and as per required.
-    </td>
-    <td width="50%">
-      <img src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
-    </td>
-  </tr>  
   <tr>
     <td width="50%">
       9. Add necessary library files of LCD 16x2 , write the program and use project and build.
@@ -179,8 +175,8 @@ int main(void)
   }
 }
 ```
-## Output  :
+### Output  :
 <img height=30% width=40% src="https://github.com/ROHITJAIND/INTERFACING-DIGITAL-OUTPUT-FOR-ARM-DEVELOPMENT-BOARD/assets/118707073/9fd535a7-6d28-413b-afd9-fbf2412a0699"> <img height=30% width=40% src="https://github.com/ROHITJAIND/INTERFACING-DIGITAL-OUTPUT-FOR-ARM-DEVELOPMENT-BOARD/assets/118707073/e3b499b6-24f4-4fc5-b139-ebdeaef9bae8">
 
-## Result :  
+### Result :  
 Interfacing a digital output with ARM microcontroller is executed and the results are verified.
